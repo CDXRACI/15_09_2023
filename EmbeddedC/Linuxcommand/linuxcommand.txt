@@ -1,0 +1,67 @@
+1: ls list of data in folder
+	ls -a : hidden file
+	ls l  : arrangement files in folder to become column
+
+2: pwd this is telling where you at.
+	
+3: cd this command will help you to change this  folder to another folder.
+	cd  ./ parent direction 
+	cd .../	
+	cd  / to root file system
+	cd ~ go home
+
+4: cat catching data from file ( mostly catching data from txt file  )
+	cat file1
+I/O Redirection using cat
+	cat > file1
+5: mkdir making a dircectory 
+	mkdir directory
+	mkdir folder/folder1
+	mkdir -p folder1/...
+
+6: rm . rmdir
+
+rm that using to remove file.
+	rm file1
+	rm -rv dir1/dir2 ...  if file has contain inside.
+	
+rmdir that using to remove directory 
+	rmdir dir
+	rmdir -p dir1/dir2/dir3...
+
+
+7: cp
+	copying file from to another file.
+	cp file1.txt file2.txt
+	
+	- copying file 2 to another directory.
+	cp file1.txt dir2
+8: mv  moving file to another directory or chaning name
+	mv file1  dir
+	mv file1 file2 ( CHANGING NAME )
+
+9: less  print less data ( txt file )
+	less file
+searching file using /contain
+
+10: touch ( touching or creating file )
+	touch file1.txt
+
+11: nano file ( editing the contain inside a file )
+	nano file
+
+12: sudo ( run as admin )
+	if you want to use sudo command. trying :
+	sudo <command> that will request password for this request...	
+
+13: top 
+	top: top will print info of cpu
+	-> S changing time to watch
+	-> K + id to kill a program is running
+
+14: ps show the process is running
+	ps -ux
+	ps -aux
+	ps -U
+	+ Kill to killing the processing while that was running
+	kill + id

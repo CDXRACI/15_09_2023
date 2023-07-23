@@ -1,0 +1,89 @@
+1. git --version
+2. git init
+3. git status
+4. git log
+
+// if you want to has privately repository in every folder 
+git config --help
+
+git config --local user.name  ""
+git config --local user.email ""
+
+git config --global user.name ""
+git config --global user.emial ""
+
+git config --global --unset user.name  ""
+git config --global --unset user.email ""
+
+git config --list
+git config --list -- global
+git config --list -- local
+
+
+git add .
+git add < file >
+
+git commit  -m " commit f1 "
+
+git remote add < name of repo > <url>
+git push --set -upstream <name of repo > <branch>
+git push < name of repo >
+
+git clone <url>
+then you clone if you want  to push some files into that repo
+git add .
+git commit 
+git status
+git push
+
+this will push files into directing to cloud
+
+undo commit < before you push > you can undo
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+
+undo add
+git  reset
+undo file into staging
+git reset -- filename
+
+checking different between index ( staging ) and latest commit
+git diff
+git diff branch1 branch2 (check diff  branch 1 and branch 2 )
+git diff hash-commit1 hash-commit2 ( check diff between comm1 and comm2 ) 
+
+backup
+backup in here is meaning you will has a another commit to backup
+when your's new  commit is collapsed.
+
+	git log
+	git revert <commit before>
+here it will change in local repo to changing in cloud
+	git push
+	
+creating a new branch
+git branch < branch name >
+git checkout < branch name >
+
+git branch + checkout = git switch < branch name >
+
+creating a new branch form a hash commit
+git switch -c < branch name > hash
+
+
+git fetch + git merge = git pull
+git fetch < remote ><branch >
+git merger < commit > or git merget< branch >
+
+git pull < remote ><branch>
+
+
+different between origin/master and master
+master: local repo
+origin : cloud repo
+origin/master : branch of cloud repo
+ 
+check diff log between local and repo when you has cloned
+git log --oneline origin/master
+git log --oneline master
+git status
