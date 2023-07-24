@@ -65,3 +65,20 @@ searching file using /contain
 	ps -U
 	+ Kill to killing the processing while that was running
 	kill + id
+
+15: echo
+	using echo to print the content input to screen.
+	if you are using a variable 
+	myvar = "hello"
+	echo myvar
+	echo " hello $myvar"
+
+16: file permissions
+	-rwx-rwx-rwx : user- group - other
+	changing permission of a file/dir
+	chmod <u:g:o +/- r:w:x> <name>
+	chmod 4+x file or chmod r+x file
+	all : chmod 7+x or chmod 777 <=> ugo
+
+17: bash script
+
