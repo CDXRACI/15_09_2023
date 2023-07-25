@@ -81,4 +81,106 @@ searching file using /contain
 	all : chmod 7+x or chmod 777 <=> ugo
 
 17: bash script
+	bash is a program which developer executes command sequentially
+	touch myscript.sh
+	nano myscript.sh
+	--> finding your bash script // which bash
+	#!-->addbash
+	command
+        --> ./myscript.sh if they are need permission accept
+	--> chmod 777 file
+	--> ./myscript.sh
+
+18: bashrc script
+	.bashrc is file which OS generated. Bashrc contains commands, files, address to executed  program
+	and if you want to executed command automatic you should use it.
+
+
+19: which 
+	find your address of command line
+20: whatis <command line>
+	To find  minding of command
+
+21: df 
+	to view of memory 
+	df -h
+22: du -sh 
+	to calculate memory of folder
+23: free 
+	to show memory which has used or not used
+
+24: watch	
+	watch -n <time> free -m 
+	to view memory following n s
+
+25: head  
+	showing 10 contents of first file
+26: tail
+	showing 10 contents of last file
+	option -n(lines)
+		-f
+27: find
+	find your file or command such as location of directory.
+	find < address > -name < file >
+
+28: sudo
+	run as adminration
+	
+29: apt-get
+	apt-get to install files or unistall files
+	sudo apt-get update
+	sudo apt-get install < file>
+	sudo apt-get remove <file>
+
+30: ifconfig
+	showing eth0 and link
+	to down or up eth..
+	sudo ifconfig eth0 down 
+	sudo ifconfig eth0 up
+30: run mutip commands
+	&& and and
+	;; or or
+
+31: tar / untar
+	tar compresses file.
+	tar -cvf < file.tar >   < source > //tar
+	tar -xvf < file.tar > // untar 
+	tar -czvf <file.tar > < source > // tar.gz
+	tar -xzvf < file.tar > // untar file tar.gz
+	
+	option: -c Creates Archive
+		-x: extract the archive
+		-f: creates archive with given filename
+		-v: displaus verbose
+		-z: zip, compress and uncompress using gzip.
+	encrypt password:
+	ccrypt tar_file.tar.cpt
+	decrypt password:
+	ccrypt --decrypt tar_file.tar.cpt
+
+32: zip / unzip
+	zip likes tar but simply to compress file with password.
+	zip <name.zip> <source.file>
+	
+	zip multipfile : zip <name.zip> file1. file2.
+	zip <name.zip> *.zip
+	
+	zip path.zip filename
+		
+ 	add existing file to zip
+	zip -u zip_file filename
+	
+	remove zip file
+	zip -d zip_file file_name
+	
+added password:
+	zip -e zip_file filename
+unzip:
+	unzip options zip_file
+unzip with password:
+	unzip -p <password> zip_file
+33: grep
+	find your "key" on documents
+	grep "options" file.txt
+	grep -n "Some options" file.txt
 
